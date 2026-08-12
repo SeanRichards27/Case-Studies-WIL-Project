@@ -11,3 +11,5 @@ Sean Richards - s3605481
 
 Maxwell Repin - s3822965
 
+Ryan Sozanski - s3840047
+

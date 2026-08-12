@@ -6,5 +6,6 @@ Team Name: Census Enthusiasts
 
 Group Members:
 Sean Richards - s3605481
+
 Maxwell Repin - s3822965
 

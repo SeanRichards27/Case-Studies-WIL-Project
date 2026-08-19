@@ -10,6 +10,8 @@ WIL Project Git Repository for RAG model
 * Sean Richards - s3605481
 * Maxwell Repin - s3822965
 * Ryan Sozanski - s3840047
+* Riyaz Basha Shaik - s4129750
+* Sushmit Sharad Kadam – s4184118  
 
 ---
 

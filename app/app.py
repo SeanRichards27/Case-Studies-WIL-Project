@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request
 import os
 
+from model.rag import RentalRAG
+
+model = RentalRAG()
+
 app = Flask(__name__,)
 app.secret_key = os.urandom(16) 
 
@@ -13,8 +17,9 @@ def search():
     if request.method == 'POST':
         if request.form['ask'] == 'Ask':
             question = request.form["question"].strip()
-            
 
-            return render_template('index.html', test=question)
+            answer = model.ask(question,top_k=5)
+
+            return render_template('index.html', test=answer)
     else:
         return render_template('index.html', test='')

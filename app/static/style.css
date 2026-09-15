@@ -1,0 +1,11 @@
+.question-box input[type="text"] {
+    flex: 1;
+    font-size: 14px;
+    padding: 4px;
+  }
+  
+  .question-box input[type="text"]::placeholder {
+    color: #ccc;
+    font-style: normal;
+  }
+  

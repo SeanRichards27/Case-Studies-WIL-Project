@@ -1,0 +1,26 @@
+<!DOCTYPE html">
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" media="all" />
+    <script src="{{ url_for('static', filename='jquery-3.6.0.js') }}"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            Census Enthusiasts (Group 68) - Case Studies in Data Science
+        </div>
+    </header>
+    
+    <form class="question-form" action="/ask" method='POST' autocomplete="off">
+        <div class="question-box">
+            <input name="question" type="text" placeholder="Enter a question" autocapitalize="off" required>
+            <input class="submit" type="submit" name="ask" value="Ask"/>
+        </div>
+    </form>
+
+    <h1>{{ test }}</h1>
+</body>
+
+</html>

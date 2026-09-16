@@ -1,0 +1,16 @@
+metric,V1,V2,change
+Recall@5,0.979,0.979,0.0
+MRR@5,0.808,0.808,0.0
+NDCG@5,0.831,0.831,0.0
+Answer correctness,0.8,0.8,0.0
+Mean question completeness,0.732,0.594,-0.138
+Gold-fact coverage,0.606,0.515,-0.091
+Claim-level faithfulness,0.8,0.929,0.129
+Unsupported claim rate,0.2,0.071,-0.129
+Citation presence,0.6,0.733,0.133
+Citations from retrieved context,1.0,1.0,0.0
+Semantic citation precision,0.778,0.864,0.086
+Supported-claim citation coverage,0.6,0.846,0.246
+Out-of-KB abstention accuracy,0.333,1.0,0.667
+Unanswered rate,0.067,0.267,0.2
+Answerable-question coverage,1.0,0.917,-0.083

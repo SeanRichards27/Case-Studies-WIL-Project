@@ -1,0 +1,12 @@
+item,value
+System version,V2
+Retriever,BM25
+Generation model,llama3.2:3b
+Top-k,5
+Knowledge-base chunks,32
+Total test questions,15
+Known questions,8
+Inferred questions,4
+Out-of-KB questions,3
+Human-reviewed gold facts,33
+Human-reviewed generated claims,28

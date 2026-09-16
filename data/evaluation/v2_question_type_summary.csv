@@ -1,0 +1,4 @@
+question_type,questions,recall_at_5,answer_correctness,mean_completeness,mean_faithfulness,citation_presence,abstention_accuracy
+Known,8,1.0,0.75,0.688,1.0,0.875,
+Inferred,4,0.938,0.75,0.408,0.9,1.0,
+Out-of-KB,3,,1.0,,,0.0,1.0

@@ -1,0 +1,156 @@
+question_id,question_type,fact_number,gold_fact,generated_answer,covered,review_notes
+K01,Known,1,A rental provider or agent cannot ask whether the applicant has taken legal action or had a dispute with a previous rental provider.,"[RG_P07] Renters Guide - Page 7
+
+The rental provider or agent cannot ask you for the following information in your application:
+
+• whether you’ve taken legal action or had a dispute with a previous rental provider.
+
+This is explicitly stated in the text.",1,
+K02,Known,1,Rental providers or agents cannot accept an offer above the advertised rent.,"According to [RG_P21], a rental provider is allowed to invite a tenant to pay more than one month's rent in advance if the weekly rent is above $900.",0,
+K03,Known,1,The property must have a fixed heater in good working order in the main living area.,"Yes, a Victorian rental property must have a fixed heater in good working order in the main living area. [MS_P01: Heating, RG_P39: Renters Guide - Page 39]
+
+According to the standards, a fixed heater in the main living area must be in good working order. For rental agreements entered into from 29 March 2023, this must be an energy-efficient fixed heater in the main living area. [MS_P01: Heating, RG_P39: Renters Guide - Page 39]",1,
+K03,Known,2,"For rental agreements starting from 29 March 2023, the heater must be energy efficient.","Yes, a Victorian rental property must have a fixed heater in good working order in the main living area. [MS_P01: Heating, RG_P39: Renters Guide - Page 39]
+
+According to the standards, a fixed heater in the main living area must be in good working order. For rental agreements entered into from 29 March 2023, this must be an energy-efficient fixed heater in the main living area. [MS_P01: Heating, RG_P39: Renters Guide - Page 39]",1,
+K04,Known,1,The completed and signed condition report must be returned within 5 business days of moving in.,"According to [RG_P17], you must give one copy of the completed, signed condition report to your rental provider or agent within 5 business days of moving in.",1,
+K05,Known,1,"If rent is paid weekly, no more than 2 weeks rent can be requested in advance.","According to [RG_P21], the most you can be asked to pay in advance is:
+
+* 2 weeks’ rent if the rent is payable weekly
+* 1 month’s rent if the weekly rent is $900 or less and the rent is payable monthly
+* More than one month’s rent if the weekly rent is above $900.",1,
+K05,Known,2,"If rent is paid monthly and weekly rent is $900 or less, no more than one month rent can be requested in advance.","According to [RG_P21], the most you can be asked to pay in advance is:
+
+* 2 weeks’ rent if the rent is payable weekly
+* 1 month’s rent if the weekly rent is $900 or less and the rent is payable monthly
+* More than one month’s rent if the weekly rent is above $900.",1,
+K05,Known,3,Different rules apply when weekly rent is above $900.,"According to [RG_P21], the most you can be asked to pay in advance is:
+
+* 2 weeks’ rent if the rent is payable weekly
+* 1 month’s rent if the weekly rent is $900 or less and the rent is payable monthly
+* More than one month’s rent if the weekly rent is above $900.",1,
+K06,Known,1,A Notice of rent increase must be provided at least 90 days before the increase takes effect.,"According to [RG_P24], your rental provider must give you at least 90 days' notice before they are going to put the rent up.",1,
+K07,Known,1,A blocked or broken toilet system is an urgent repair.,The retrieved context does not provide information on whether a broken toilet is considered an urgent repair.,0,
+K07,Known,2,Urgent repairs must be dealt with immediately.,The retrieved context does not provide information on whether a broken toilet is considered an urgent repair.,0,
+K08,Known,1,A rental provider who wants to refuse a pet request must apply to VCAT within 14 days.,"According to [RG_P28], if your rental provider wants to refuse consent for a pet, they must apply to VCAT within 14 days.",1,
+K08,Known,2,VCAT decides whether refusing consent is reasonable.,"According to [RG_P28], if your rental provider wants to refuse consent for a pet, they must apply to VCAT within 14 days.",0,
+I01,Inferred,1,A rental property must have a working fixed heater in the main living area.,"According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",1,
+I01,Inferred,2,Failure to meet rental minimum standards is considered an urgent repair.,"According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",0,
+I01,Inferred,3,The rental provider must arrange an urgent repair immediately.,"According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",0,
+I01,Inferred,4,"If the provider does not respond, the renter can arrange the urgent repair if it costs no more than $2500.","According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",1,
+I01,Inferred,5,The rental provider must reimburse the renter within 7 days.,"According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",0,
+I01,Inferred,6,"If reimbursement is not provided, the renter can apply to RDRV.","According to [RG_P13], a rental property must have a fixed heater in good working order in the main living area. Since your rental has no working fixed heater, this is considered a non-urgent repair, as it is not listed as an 'Urgent repair' (see page 24).
+
+If the rental provider does not respond to your request for repair, you can organise and pay for the repair yourself, but only if the repair does not cost more than $2500. You can use the 'Notice to rental provider of rented premises' form to request reimbursement for the repair, and you will need receipts/invoices and any other proof of repairs.",0,
+I02,Inferred,1,The renter must receive at least 90 days notice of a rent increase.,"According to [RG_P23], your rental provider must use the Notice of rent increase form to tell you about rent increases at least 90 days before they are going to put the rent up.
+
+To challenge the rent increase, you can ask Consumer Affairs Victoria to investigate if you believe the increased rent is too high. You must contact us within 30 days of receiving a rent increase notice. You can use the Request for rental assessment form to ask us for a rent assessment.",1,
+I02,Inferred,2,The renter can request a free rent assessment from Consumer Affairs Victoria.,"According to [RG_P23], your rental provider must use the Notice of rent increase form to tell you about rent increases at least 90 days before they are going to put the rent up.
+
+To challenge the rent increase, you can ask Consumer Affairs Victoria to investigate if you believe the increased rent is too high. You must contact us within 30 days of receiving a rent increase notice. You can use the Request for rental assessment form to ask us for a rent assessment.",0,
+I02,Inferred,3,The assessment must be requested within 30 days of receiving the rent increase notice.,"According to [RG_P23], your rental provider must use the Notice of rent increase form to tell you about rent increases at least 90 days before they are going to put the rent up.
+
+To challenge the rent increase, you can ask Consumer Affairs Victoria to investigate if you believe the increased rent is too high. You must contact us within 30 days of receiving a rent increase notice. You can use the Request for rental assessment form to ask us for a rent assessment.",1,
+I02,Inferred,4,"If the dispute remains unresolved, the renter can apply to RDRV or VCAT.","According to [RG_P23], your rental provider must use the Notice of rent increase form to tell you about rent increases at least 90 days before they are going to put the rent up.
+
+To challenge the rent increase, you can ask Consumer Affairs Victoria to investigate if you believe the increased rent is too high. You must contact us within 30 days of receiving a rent increase notice. You can use the Request for rental assessment form to ask us for a rent assessment.",0,
+I03,Inferred,1,The original condition report can show that the damage existed when the renter moved in.,"According to [RG_P35], to dispute a bond claim, you can provide evidence for any claims the rental provider is making on the bond, and RDRV will review the details, discuss it with both parties and try to help you reach a fair outcome.
+
+Additionally, [RG_P34] states that when moving out, you must leave the property ""reasonably clean"" and ""in the same condition as when you moved in, taking into account fair wear and tear."" This suggests that if the damage was already present when you moved in, you may be able to argue that it was not your responsibility to repair or clean it.
+
+It's also worth noting that [RG_P34] mentions that if you signed a rental agreement on or after 29 March 2021, there are extra requirements for professional cleaning. However, this does not directly address the issue of pre-existing damage.
+
+It's recommended that you provide evidence to support your claim, such as photos or documentation of the damage being present when you moved in, to help dispute the claim.",0,
+I03,Inferred,2,Photos can provide evidence of pre-existing damage.,"According to [RG_P35], to dispute a bond claim, you can provide evidence for any claims the rental provider is making on the bond, and RDRV will review the details, discuss it with both parties and try to help you reach a fair outcome.
+
+Additionally, [RG_P34] states that when moving out, you must leave the property ""reasonably clean"" and ""in the same condition as when you moved in, taking into account fair wear and tear."" This suggests that if the damage was already present when you moved in, you may be able to argue that it was not your responsibility to repair or clean it.
+
+It's also worth noting that [RG_P34] mentions that if you signed a rental agreement on or after 29 March 2021, there are extra requirements for professional cleaning. However, this does not directly address the issue of pre-existing damage.
+
+It's recommended that you provide evidence to support your claim, such as photos or documentation of the damage being present when you moved in, to help dispute the claim.",1,
+I03,Inferred,3,The exit condition report can be compared with the original condition report.,"According to [RG_P35], to dispute a bond claim, you can provide evidence for any claims the rental provider is making on the bond, and RDRV will review the details, discuss it with both parties and try to help you reach a fair outcome.
+
+Additionally, [RG_P34] states that when moving out, you must leave the property ""reasonably clean"" and ""in the same condition as when you moved in, taking into account fair wear and tear."" This suggests that if the damage was already present when you moved in, you may be able to argue that it was not your responsibility to repair or clean it.
+
+It's also worth noting that [RG_P34] mentions that if you signed a rental agreement on or after 29 March 2021, there are extra requirements for professional cleaning. However, this does not directly address the issue of pre-existing damage.
+
+It's recommended that you provide evidence to support your claim, such as photos or documentation of the damage being present when you moved in, to help dispute the claim.",0,
+I03,Inferred,4,The rental provider cannot claim the bond for fair wear and tear.,"According to [RG_P35], to dispute a bond claim, you can provide evidence for any claims the rental provider is making on the bond, and RDRV will review the details, discuss it with both parties and try to help you reach a fair outcome.
+
+Additionally, [RG_P34] states that when moving out, you must leave the property ""reasonably clean"" and ""in the same condition as when you moved in, taking into account fair wear and tear."" This suggests that if the damage was already present when you moved in, you may be able to argue that it was not your responsibility to repair or clean it.
+
+It's also worth noting that [RG_P34] mentions that if you signed a rental agreement on or after 29 March 2021, there are extra requirements for professional cleaning. However, this does not directly address the issue of pre-existing damage.
+
+It's recommended that you provide evidence to support your claim, such as photos or documentation of the damage being present when you moved in, to help dispute the claim.",0,
+I03,Inferred,5,A disputed bond claim can be taken through RDRV.,"According to [RG_P35], to dispute a bond claim, you can provide evidence for any claims the rental provider is making on the bond, and RDRV will review the details, discuss it with both parties and try to help you reach a fair outcome.
+
+Additionally, [RG_P34] states that when moving out, you must leave the property ""reasonably clean"" and ""in the same condition as when you moved in, taking into account fair wear and tear."" This suggests that if the damage was already present when you moved in, you may be able to argue that it was not your responsibility to repair or clean it.
+
+It's also worth noting that [RG_P34] mentions that if you signed a rental agreement on or after 29 March 2021, there are extra requirements for professional cleaning. However, this does not directly address the issue of pre-existing damage.
+
+It's recommended that you provide evidence to support your claim, such as photos or documentation of the damage being present when you moved in, to help dispute the claim.",1,
+I04,Inferred,1,A rental provider cannot evict a renter because they exercised or intended to exercise their rental rights.,"Based on the retrieved context, specifically [RG_P32] Renters Guide - Page 32, it states that a rental provider cannot end a rental agreement without a valid reason, even at the end of a fixed-term agreement.
+
+It also lists the reasons a rental provider can issue a notice to vacate, which include:
+
+* The rental provider, a member of their immediate family or a dependent will be moving in.
+* Reconstruction, repairs or renovations are planned and can’t go ahead unless the renter vacates.
+* The rental property is going to be demolished and all necessary permits have been obtained.
+
+However, it does not explicitly state that a rental provider can evict a tenant for exercising their rental rights. In fact, [RG_P33] Renters Guide - Page 33 states that a rental provider or agent can’t evict you for using or intending to act on your rights.
+
+Therefore, the answer is that your rental provider cannot evict you solely because you have tried to exercise your rental rights. However, they can end the agreement if they have a valid reason, such as one of the reasons listed in [RG_P32].",1,
+I04,Inferred,2,The rental provider needs a valid reason to end the agreement.,"Based on the retrieved context, specifically [RG_P32] Renters Guide - Page 32, it states that a rental provider cannot end a rental agreement without a valid reason, even at the end of a fixed-term agreement.
+
+It also lists the reasons a rental provider can issue a notice to vacate, which include:
+
+* The rental provider, a member of their immediate family or a dependent will be moving in.
+* Reconstruction, repairs or renovations are planned and can’t go ahead unless the renter vacates.
+* The rental property is going to be demolished and all necessary permits have been obtained.
+
+However, it does not explicitly state that a rental provider can evict a tenant for exercising their rental rights. In fact, [RG_P33] Renters Guide - Page 33 states that a rental provider or agent can’t evict you for using or intending to act on your rights.
+
+Therefore, the answer is that your rental provider cannot evict you solely because you have tried to exercise your rental rights. However, they can end the agreement if they have a valid reason, such as one of the reasons listed in [RG_P32].",1,
+I04,Inferred,3,The rental provider must provide the correct written Notice to vacate.,"Based on the retrieved context, specifically [RG_P32] Renters Guide - Page 32, it states that a rental provider cannot end a rental agreement without a valid reason, even at the end of a fixed-term agreement.
+
+It also lists the reasons a rental provider can issue a notice to vacate, which include:
+
+* The rental provider, a member of their immediate family or a dependent will be moving in.
+* Reconstruction, repairs or renovations are planned and can’t go ahead unless the renter vacates.
+* The rental property is going to be demolished and all necessary permits have been obtained.
+
+However, it does not explicitly state that a rental provider can evict a tenant for exercising their rental rights. In fact, [RG_P33] Renters Guide - Page 33 states that a rental provider or agent can’t evict you for using or intending to act on your rights.
+
+Therefore, the answer is that your rental provider cannot evict you solely because you have tried to exercise your rental rights. However, they can end the agreement if they have a valid reason, such as one of the reasons listed in [RG_P32].",0,
+I04,Inferred,4,The required notice period depends on the reason.,"Based on the retrieved context, specifically [RG_P32] Renters Guide - Page 32, it states that a rental provider cannot end a rental agreement without a valid reason, even at the end of a fixed-term agreement.
+
+It also lists the reasons a rental provider can issue a notice to vacate, which include:
+
+* The rental provider, a member of their immediate family or a dependent will be moving in.
+* Reconstruction, repairs or renovations are planned and can’t go ahead unless the renter vacates.
+* The rental property is going to be demolished and all necessary permits have been obtained.
+
+However, it does not explicitly state that a rental provider can evict a tenant for exercising their rental rights. In fact, [RG_P33] Renters Guide - Page 33 states that a rental provider or agent can’t evict you for using or intending to act on your rights.
+
+Therefore, the answer is that your rental provider cannot evict you solely because you have tried to exercise your rental rights. However, they can end the agreement if they have a valid reason, such as one of the reasons listed in [RG_P32].",0,
+I04,Inferred,5,In most instances the notice period is 90 days.,"Based on the retrieved context, specifically [RG_P32] Renters Guide - Page 32, it states that a rental provider cannot end a rental agreement without a valid reason, even at the end of a fixed-term agreement.
+
+It also lists the reasons a rental provider can issue a notice to vacate, which include:
+
+* The rental provider, a member of their immediate family or a dependent will be moving in.
+* Reconstruction, repairs or renovations are planned and can’t go ahead unless the renter vacates.
+* The rental property is going to be demolished and all necessary permits have been obtained.
+
+However, it does not explicitly state that a rental provider can evict a tenant for exercising their rental rights. In fact, [RG_P33] Renters Guide - Page 33 states that a rental provider or agent can’t evict you for using or intending to act on your rights.
+
+Therefore, the answer is that your rental provider cannot evict you solely because you have tried to exercise your rental rights. However, they can end the agreement if they have a valid reason, such as one of the reasons listed in [RG_P32].",0,

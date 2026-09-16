@@ -1,0 +1,6 @@
+failure_type,questions_affected,share_of_test_set
+Incomplete answer,7,0.467
+Citation failure,5,0.333
+Incorrect answer,3,0.2
+Missing retrieval evidence,1,0.067
+Unsupported claim(s),1,0.067

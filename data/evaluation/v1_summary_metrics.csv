@@ -1,0 +1,14 @@
+evaluation_area,metric,score
+Retrieval,Recall@5,0.979
+Retrieval,MRR@5,0.808
+Retrieval,NDCG@5,0.831
+Answer quality,Answer correctness,0.8
+Answer quality,Mean question completeness,0.732
+Answer quality,Gold-fact coverage,0.606
+Grounding,Claim-level faithfulness,0.8
+Grounding,Unsupported claim rate,0.2
+Citations,Citation presence,0.6
+Citations,Citations from retrieved context,1.0
+Citations,Semantic citation precision,0.778
+Citations,Supported-claim citation coverage,0.6
+Out-of-KB,Out-of-KB abstention accuracy,0.333

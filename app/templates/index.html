@@ -7,12 +7,18 @@
 </head>
 
 <body>
+
     <header>
         <div class="title">
             Census Enthusiasts (Group 68) - Case Studies in Data Science
         </div>
     </header>
-    
+
+    <div class="response-box">
+        <p class="query">{{ question }}</p>
+        <p class="response">{{ answer }}</p>
+    </div>
+
     <form class="question-form" action="/ask" method='POST' autocomplete="off">
         <div class="question-box">
             <input name="question" type="text" placeholder="Enter a question" autocapitalize="off" required>
@@ -20,7 +26,6 @@
         </div>
     </form>
 
-    <h1>{{ test }}</h1>
 </body>
 
 </html>

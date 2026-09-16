@@ -10,7 +10,7 @@ app.secret_key = os.urandom(16)
 
 @app.route('/')
 def index():
-    return render_template('index.html', test='')
+    return render_template('index.html')
 
 @app.route('/ask', methods = ['POST'])
 def search():
@@ -20,6 +20,6 @@ def search():
 
             answer = model.ask(question,top_k=5)
 
-            return render_template('index.html', test=answer)
+            return render_template('index.html', question = question, answer=answer)
     else:
-        return render_template('index.html', test='')
+        return render_template('index.html')

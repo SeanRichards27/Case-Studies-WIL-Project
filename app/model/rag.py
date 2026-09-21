@@ -54,21 +54,29 @@ class RentalRAG:
                 f"{row['text']}"
             )
         context = "\n\n---\n\n".join(context_parts)
-
         return context
+    
+    @staticmethod
+    def extract_citations(answer):
+        return list(dict.fromkeys(
+            re.findall(r"\b(?:RG|MS)_P\d{2}\b", answer)
+        ))
 
     def generate(self, question, context):
         prompt = f"""
-        You are answering questions about Victorian rental rights.
+        You are answering a question about Victorian rental rights using retrieved source material.
 
-        Use ONLY the retrieved context provided below.
-        Do not use outside knowledge or make assumptions.
+        Read ALL of the retrieved chunks before answering. Relevant evidence may appear anywhere in the context.
 
-        Instructions:
-        - Answer the user's question clearly and concisely.
-        - Support factual statements using the relevant chunk ID in square brackets, for example [RG_P24].
+        Rules:
+        - Answer using only information explicitly supported by the retrieved context.
+        - If any retrieved chunk directly supports the answer, use that evidence and answer the question.
+        - Do not refuse simply because some retrieved chunks are irrelevant.
+        - Answer all parts of the question that are supported by the retrieved evidence.
+        - Do not invent, assume or infer rules that are not stated in the context.
+        - Cite the supporting chunk ID after each factual statement, for example [RG_P24].
         - Only cite chunks that actually support the statement.
-        - If the retrieved context does not contain enough information to answer the question, say:
+        - If none of the retrieved chunks contain enough information to answer the question, respond exactly:
         "The retrieved information does not contain enough information to answer this question."
 
         RETRIEVED CONTEXT:
@@ -79,6 +87,7 @@ class RentalRAG:
 
         ANSWER:
         """
+
 
         response = requests.post(
             OLLAMA_URL,
@@ -99,5 +108,5 @@ class RentalRAG:
     def ask(self, question, top_k = 5):
         retrived = self.retrieve_bm25(question, top_k)
         answer = self.generate(question, self.get_context(retrived))
-
-        return answer
+        citations = self.extract_citations(answer)
+        return answer, citations

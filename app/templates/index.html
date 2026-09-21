@@ -26,6 +26,20 @@
         </div>
     </form>
 
+    {% for source in citations %}
+    <div class="citation">
+        <p>{{ source }}</p>
+    </div>  
+    {% endfor %}
+
+    <footer>
+        <div class="disclamer">
+            <strong>Note:</strong> This is not legal advice, information provided is intended to be used as a guideline only. 
+            Should you have further queries or concerns please reach out to a legal practitioner to assist you further. 
+            The Law Institute of Victoria provides a search function to find legal help in your area. Access <a href="https://www.liv.asn.au/referral">here</a>
+        </div>
+    </footer>
 </body>
+
 
 </html>

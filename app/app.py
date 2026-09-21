@@ -18,8 +18,8 @@ def search():
         if request.form['ask'] == 'Ask':
             question = request.form["question"].strip()
 
-            answer = model.ask(question,top_k=5)
+            answer, citations = model.ask(question,top_k=5)
 
-            return render_template('index.html', question = question, answer=answer)
+            return render_template('index.html', question = question, answer=answer, citations=citations)
     else:
         return render_template('index.html')

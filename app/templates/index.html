@@ -2,44 +2,56 @@
 <html>
 
 <head>
+    <title>Victorian Rental Rights Assistant</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css" media="all" />
     <script src="{{ url_for('static', filename='jquery-3.6.0.js') }}"></script>
 </head>
 
 <body>
 
-    <header>
+    <header class="site-header">
         <div class="title">
             Census Enthusiasts (Group 68) - Case Studies in Data Science
         </div>
     </header>
 
-    <div class="response-box">
-        <p class="query">{{ question }}</p>
-        <p class="response">{{ answer }}</p>
-    </div>
+    <main class="main-page">
+        <form class="question-form" action="/ask" method='POST' autocomplete="off">
+            <div class="question-box">
+                <input name="question" type="text" placeholder="For example: Can I have pets in my apartment?" autocapitalize="off" required>
+                <input class="submit" type="submit" name="ask" value="Ask"/>
+            </div>
+        </form>
 
-    <form class="question-form" action="/ask" method='POST' autocomplete="off">
-        <div class="question-box">
-            <input name="question" type="text" placeholder="Enter a question" autocapitalize="off" required>
-            <input class="submit" type="submit" name="ask" value="Ask"/>
+        {% if answer %}
+        <div class="response-box">
+            <div>
+                <span class="question-label">Your question</span>  
+                <h3>{{ question }}</h3>  
+            </div>
+
+            <div class="answer">{{ answer }}</div>
         </div>
-    </form>
+        {% endif %}
 
-    {% for source in citations %}
-    <div class="citation">
-        <p>{{ source }}</p>
-    </div>  
-    {% endfor %}
-
+        {% for source in citations %}
+        <div class="citation">
+            <p>{{ source }}</p>
+        </div>  
+        {% endfor %}
+    </main> 
     <footer>
-        <div class="disclamer">
-            <strong>Note:</strong> This is not legal advice, information provided is intended to be used as a guideline only. 
-            Should you have further queries or concerns please reach out to a legal practitioner to assist you further. 
-            The Law Institute of Victoria provides a search function to find legal help in your area. Access <a href="https://www.liv.asn.au/referral">here</a>
+        <div class="footer-content">
+            <div class="disclamer">
+                <strong>Note:</strong> 
+                <p>
+                This is not legal advice, information provided is intended to be used as a guideline only. 
+                Should you have further queries or concerns please reach out to a legal practitioner to assist you further. 
+                The Law Institute of Victoria provides a search function to find legal help in your area. Access <a href="https://www.liv.asn.au/referral">here</a>
+                </p>
+            </div>
         </div>
     </footer>
 </body>
-
 
 </html>

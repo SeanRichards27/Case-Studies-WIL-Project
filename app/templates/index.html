@@ -16,17 +16,27 @@
     </header>
 
     <main class="main-page">
+        <section class="intro">
+            <div>
+                <span class="intro-statement">Victorian Rental Rights</span>
+                <h1>Understand your rental rights</h1>
+                <p>Ask a question to receive a response based on resources from Consumer Affairs Victoria</p>
+            </div>  
+        </section>
+
         <form class="question-form" action="/ask" method='POST' autocomplete="off">
             <div class="question-box">
                 <input name="question" type="text" placeholder="For example: Can I have pets in my apartment?" autocapitalize="off" required>
-                <input class="submit" type="submit" name="ask" value="Ask"/>
+                <button class="submit" type="submit" name="ask" value="Ask">
+                    <span>Ask question</span>
+                </button>
             </div>
         </form>
 
         {% if answer %}
         <div class="response-box">
-            <div>
-                <span class="question-label">Your question</span>  
+            <div class="response-question">
+                <span class="question-label">Your question:</span>  
                 <h3>{{ question }}</h3>  
             </div>
 
@@ -40,6 +50,7 @@
         </div>  
         {% endfor %}
     </main> 
+
     <footer>
         <div class="footer-content">
             <div class="disclamer">

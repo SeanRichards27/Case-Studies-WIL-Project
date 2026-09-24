@@ -61,6 +61,26 @@ class RentalRAG:
         return list(dict.fromkeys(
             re.findall(r"\b(?:RG|MS)_P\d{2}\b", answer)
         ))
+    
+    def citation_details(self, answer):
+        citation_ids = self.extract_citations(answer)
+        citations = []
+
+        for chunk_id in citation_ids:
+            match = self.chunks[self.chunks['chunk_id'] == chunk_id]
+            if match.empty:
+                continue
+
+            row = match.iloc[0]
+            page = int(row['page'])
+            
+            citations.append({
+                'chunk_id': chunk_id,
+                'document_name': row['document_name'],
+                'page': page,
+            })
+        
+        return citations
 
     def generate(self, question, context):
         prompt = f"""
@@ -108,5 +128,5 @@ class RentalRAG:
     def ask(self, question, top_k = 5):
         retrived = self.retrieve_bm25(question, top_k)
         answer = self.generate(question, self.get_context(retrived))
-        citations = self.extract_citations(answer)
+        citations = self.citation_details(answer)
         return answer, citations

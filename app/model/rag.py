@@ -9,6 +9,9 @@ from pathlib import Path
 OLLAMA_URL = "http://localhost:11434/api/generate"
 OLLAMA_MODEL = "llama3.2:3b"
 
+SOURCE_URLS = {"RG":"https://www.consumer.vic.gov.au/housing/renting/starting-and-changing-rental-agreements/resources-and-guides-for-renters/renters-guide",
+               "MS":"https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/minimum-standards/minimum-standards-for-rental-properties"}
+
 CURRENT_DIR = Path.cwd()
 if (CURRENT_DIR / "data" / "processed").exists():
     DATA_DIR = CURRENT_DIR / "data" / "processed"
@@ -72,12 +75,15 @@ class RentalRAG:
                 continue
 
             row = match.iloc[0]
+            document_id = str(row['document_id'])
+            source_url = SOURCE_URLS.get(document_id)
             page = int(row['page'])
             
             citations.append({
                 'chunk_id': chunk_id,
                 'document_name': row['document_name'],
                 'page': page,
+                'url': source_url if source_url else None
             })
         
         return citations

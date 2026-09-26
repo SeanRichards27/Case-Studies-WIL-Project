@@ -10,7 +10,10 @@
 <body>
     <header class="site-header">
         <div class="title">
-            Census Enthusiasts (Group 68) - Case Studies in Data Science
+            <strong>V-RENT (Victorian Rental Enquiry & Navigation Tool)</strong>
+        </div>
+        <div class="title">
+            <span>Census Enthusiasts (Group 68) - Case Studies in Data Science</span>
         </div>
     </header>
 
@@ -47,13 +50,15 @@
         <span class="citation-label">Citations used:</span>
         <div class="citation-block">
             {% for source in citations %}
-            <div class="citation">
+
+            <a class="citation" href="{{ source['url'] }}" target="_blank" rel="noopener noreferrer">
                 <strong>{{ source['document_name'] }}</strong>
                 <p>
                     Page {{ source['page'] }}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83l1.41 1.41L19 6.41V10h2V3z"/></svg>
                 </p>
-            </div>  
+            </a> 
+
             {% endfor %}
         </div>
         {% endif %}
